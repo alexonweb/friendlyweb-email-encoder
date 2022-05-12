@@ -1,4 +1,25 @@
-Класс преобразует адрес электронной почты в набор HTML-мнемоник.
-Такой методот неплохо помогает для борьбы со СПАМ-роботами, собирающими адреса для рассылки.
+# E-mail HTML Encoder
 
-Например, адрес example@yandex.ru в исходном коде будет выглядеть как &amp;#101;&amp;#120;&amp;#97;&amp;#109;&amp;#112;&amp;#108;&amp;#101;&amp;#64;&amp;#121;&amp;#97;&amp;#110;&amp;#100;&amp;#101;&amp;#120;&amp;#46;&amp;#114;&amp;#117;
+Problem:
+Spam robots trawl the web for email address and pick them up for spam mailing.
+
+Solution:
+Encode an email address into a set of HTML mnemonics.
+
+## Example
+`example@gmail.com` converted to:
+`&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;`
+
+## Usage
+
+Method will find the email address and only encode it
+
+```
+$encodeMail->encodeMail(string $inputext);
+```
+
+__inputext__
+    text string that will encode the email address
+
+
+
