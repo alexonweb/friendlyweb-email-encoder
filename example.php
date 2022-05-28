@@ -4,13 +4,11 @@
  * Email encoding usage examples
  */
 
-require 'EncodeMailAddress/EncodeMailAddress.php';
+require 'FriendlyWeb/EncodeMailAddress/EncodeMailAddress.php';
 
 $encodeMail = new FriendlyWeb\EncodeMailAddress();
 
 $email = 'example@gmail.com';
-
-
 
 // Method will find the email address and only encode it
 
