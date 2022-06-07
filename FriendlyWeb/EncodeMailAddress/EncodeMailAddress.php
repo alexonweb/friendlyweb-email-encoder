@@ -17,7 +17,8 @@
 
 namespace FriendlyWeb;
 
-class EncodeMailAddress { 
+class EncodeMailAddress 
+{ 
 
 	public function encodeMail($inputext = '')
 	{
